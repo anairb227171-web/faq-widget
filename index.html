@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FAQ Widget</title>
+  <style>
+    /* Inlined CSS */
+    .faq-container {
+      max-width: 800px;
+      margin: 2rem auto;
+      font-family: Arial, sans-serif;
+      border-top: 2px solid #eee;
+      padding-top: 1rem;
+    }
+    .faq-container h2 {
+      font-size: 1.5rem;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .faq-category h3 {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    .faq-item {
+      border-bottom: 1px solid #ddd;
+    }
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      outline: none;
+      text-align: left;
+      font-size: 1rem;
+      padding: 1rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .faq-question:hover {
+      background-color: #f9f9f9;
+    }
+    .icon {
+      font-weight: bold;
+      transition: transform 0.3s ease;
+    }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease;
+      padding: 0 1rem;
+    }
+    .faq-answer p {
+      margin: 0.5rem 0 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="faq-container">
+    <h2>Frequently Asked Questions</h2>
+
+    <!-- General Questions -->
+    <div class="faq-category">
+      <h3>General Questions</h3>
+
+      <div class="faq-item">
+        <button class="faq-question">When and where is the Disability Pride Parade happening?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p><em>Sunday, October 19th from Madison Square Park to Union Square Park in Manhattan.</em></p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Is the Festival free to attend?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p><em>Yes! The festival is free and open to everyone.</em></p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Do I need to register in advance?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p><em>To set up a table, or if you need any accommodations, yes. Volunteers and people who are tabling will need to register in advance, but the parade is open to the public.</em></p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">What is the Disability Parade and Awareness Event all about?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p><em>Honoring Disability Pride by uniting diverse disabled and non-disabled communities through common experiences, performances, and open conversation.</em></p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">How do I get to the festival?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p><em>There are many ways to get to the start of the parade using public transportation listed here: 
+            <a href="https://sites.google.com/view/copy-disability-pride-nyc/information-for-participants/transportation-mta?authuser=0">Transportation: MTA</a>. 
+            If you need Access-A-Ride, contact them 1 to 2 days in advance using the information listed here: 
+            <a href="https://sites.google.com/view/copy-disability-pride-nyc/information-for-participants/transportation-access-a-ride?authuser=0">Transportation: Access-A-Ride</a>.</em>
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Are there restrooms available?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p><em>Yes, we have porta potties available along the parade. Union Square Park also provides public restrooms if needed.</em></p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Will there be food and vendors?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p><em>Yes, there will be vendors throughout the parade.</em></p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Will there be water stations?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p><em>Yes, there will be water stations across the different blocks to keep you hydrated.</em></p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Is parking available?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p><em>No, there will not be a designated area for people attending the parade. You should expect to park on the street or take public transportation.</em></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Accessibility -->
+    <div class="faq-category">
+      <h3>Accessibility</h3>
+
+      <div class="faq-item">
+        <button class="faq-question">What accessibility accommodations will be available?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p><em>ASL interpreters, live captioning, wheelchair accessible routes, sensory guides, and more.</em></p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Are service animals allowed?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p><em>Yes, service animals are permitted at all times. If you or your service animal need any additional support, our team is happy to help.</em></p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Who do I contact to request special accommodations?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p><em>Please email [insert accessibility contact email]</em>. We encourage requests at least <em>[insert timeframe]</em> before the event. For traveling to/from the parade view, <a href="https://sites.google.com/view/copy-disability-pride-nyc/information-for-participants/transportation-access-a-ride?authuser=0">Access-A-Ride</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Volunteers -->
+    <div class="faq-category">
+      <h3>Volunteers</h3>
+
+      <div class="faq-item">
+        <button class="faq-question">Where can I sign up to be a volunteer?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p><em>You can register through this link, <a href="https://docs.google.com/forms/d/e/1FAIpQLSeEloOOQoU6lSn_NT20KwpLgj5OGFppQptiH_nfu4Ac25FwLg/viewform">Volunteer Form</a>.</em></p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Who can volunteer?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p><em>Anyone can volunteer.</em></p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">What will volunteers do?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p><em>There will be three different types of volunteers: Creative, Accessibility & Information, and Logistics. Each type has different roles. Full details will be posted here: <a href="https://sites.google.com/view/copy-disability-pride-nyc/community-participation/volunteer?authuser=0#h.87iwzjod2jxy">Volunteer Info</a>.</em></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Safety & Guidelines -->
+    <div class="faq-category">
+      <h3>Safety & Guidelines</h3>
+
+      <div class="faq-item">
+        <button class="faq-question">What should I do if I need medical assistance during the event?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p><em>Look for a volunteer or staff member and tell them about your situation. If needed, step aside and call 911.</em></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Additional Info -->
+    <div class="faq-category">
+      <h3>Additional Info</h3>
+
+      <div class="faq-item">
+        <button class="faq-question">Will the event be livestreamed or recorded?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p><em>[insert answer]</em></p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">How can I stay updated about changes (weather, schedule, etc.)?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p><em>We do have a weather policy in place. You can read the full details <a href="https://sites.google.com/view/copy-disability-pride-nyc/information-for-participants/weather-policy?authuser=0">here</a>. Please note that you’ll need to register in order to receive notifications about any parade cancellations or changes.</em></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    /* Inlined JS */
+    const faqItems = document.querySelectorAll(".faq-item");
+
+    faqItems.forEach(item => {
+      const button = item.querySelector(".faq-question");
+      const answer = item.querySelector(".faq-answer");
+      const icon = item.querySelector(".icon");
+
+      button.addEventListener("click", () => {
+        const isOpen = item.classList.contains("active");
+
+        // Close all other items
+        faqItems.forEach(i => {
+          i.classList.remove("active");
+          i.querySelector(".faq-answer").style.maxHeight = null;
+          i.querySelector(".icon").textContent = "+";
+        });
+
+        // Toggle current
+        if (!isOpen) {
+          item.classList.add("active");
+          answer.style.maxHeight = answer.scrollHeight + "px";
+          icon.textContent = "−";
+        }
+      });
+    });
+  </script>
+</body>
+</html>
